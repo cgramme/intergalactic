@@ -202,6 +202,16 @@ body {
   background: rgba(0, 0, 0, 0.8);
   padding: 30px 20px 50px 20px;
   border-radius: 5px; }
+  @media screen and (max-width: 1100px) {
+    .launch-controls {
+      margin-top: 150px;
+      padding: 20px 0 50px 0; } }
+  @media screen and (max-width: 900px) {
+    .launch-controls {
+      width: 100%; } }
+  @media screen and (max-width: 500px) {
+    .launch-controls {
+      margin: 120px auto 0 auto; } }
   .launch-controls h2 {
     color: #fff;
     font-size: 45px;
@@ -216,6 +226,10 @@ body {
     width: 500px;
     padding: 20px;
     box-shadow: inset 0 0 5px 2px #555, 0 0 10px 5px #000; }
+    @media screen and (max-width: 1100px) {
+      .launch-controls .controls-wrap {
+        width: 80%;
+        padding: 20px; } }
     .launch-controls .controls-wrap ul.controls {
       margin: auto;
       text-align: center; }
@@ -230,6 +244,9 @@ body {
         box-shadow: 1px 1px 1px 1px #000, inset 1px 1px 1px 0 #aaa;
         border: 1px solid #222;
         vertical-align: top; }
+        @media screen and (max-width: 600px) {
+          .launch-controls .controls-wrap ul.controls li {
+            margin: 5px 0; } }
         .launch-controls .controls-wrap ul.controls li:last-child {
           padding: 5px;
           background: transparent;
@@ -478,14 +495,30 @@ body {
   width: 800px;
   background: rgba(0, 0, 0, 0.8);
   border-radius: 5px; }
+  @media screen and (max-width: 1100px) {
+    .submit-page {
+      margin-top: 150px;
+      padding: 20px 0 50px 0; } }
+  @media screen and (max-width: 900px) {
+    .submit-page {
+      width: 100%; } }
+  @media screen and (max-width: 500px) {
+    .submit-page {
+      margin: 120px auto 0 auto; } }
   .submit-page .flight-details-wrap {
     background: rgba(255, 255, 255, 0.2);
     box-shadow: inset 0 0 5px 2px #555, 0 0 10px 5px #000;
     border-radius: 5px;
     width: 600px;
     padding: 20px;
-    margin: auto;
-    margin-top: 20px; }
+    margin: 20px auto; }
+    @media screen and (max-width: 1100px) {
+      .submit-page .flight-details-wrap {
+        width: 80%; } }
+    @media screen and (max-width: 600px) {
+      .submit-page .flight-details-wrap {
+        padding: 5px;
+        width: 90%; } }
     .submit-page .flight-details-wrap .shade-area {
       font-family: 'Open Sans Condensed', sans-serif;
       padding: 20px;
@@ -534,6 +567,9 @@ body {
     color: #000;
     text-shadow: 1px 1px 1px #777;
     padding-bottom: 10px; }
+    @media screen and (max-width: 500px) {
+      .submit-page h4 {
+        font-size: 18px; } }
   .submit-page img {
     width: 170px;
     height: 170px;
@@ -541,21 +577,34 @@ body {
     border: 5px solid #000;
     box-shadow: 0 0 1px 1px #777, 1px 1px 3px 0 #999;
     margin: 10px; }
+    @media screen and (max-width: 500px) {
+      .submit-page img {
+        width: 100px;
+        height: 100px; } }
   .submit-page .left-side {
     margin-top: 20px;
     height: 350px;
     text-align: center;
     float: left;
     width: 50%; }
+    @media screen and (max-width: 500px) {
+      .submit-page .left-side {
+        height: 300px; } }
     .submit-page .left-side .people {
       font-size: 40px;
       color: #fff; }
+      @media screen and (max-width: 500px) {
+        .submit-page .left-side .people {
+          font-size: 30px; } }
   .submit-page .right-side {
     margin-top: 20px;
     height: 350px;
     text-align: center;
     float: right;
     width: 50%; }
+    @media screen and (max-width: 500px) {
+      .submit-page .right-side {
+        height: 300px; } }
 
 div.contact {
   position: relative;
@@ -567,6 +616,16 @@ div.contact {
   width: 800px;
   background: rgba(0, 0, 0, 0.8);
   border-radius: 5px; }
+  @media screen and (max-width: 1100px) {
+    div.contact {
+      margin-top: 150px;
+      padding: 20px 0 50px 0; } }
+  @media screen and (max-width: 900px) {
+    div.contact {
+      width: 100%; } }
+  @media screen and (max-width: 500px) {
+    div.contact {
+      margin: 120px auto 0 auto; } }
   div.contact h2 {
     color: #fff;
     font-size: 45px;
@@ -579,14 +638,21 @@ div.contact {
     box-shadow: inset 0 0 5px 2px #555, 0 0 10px 5px #000;
     border-radius: 5px;
     width: 600px;
-    padding: 50px 50px;
-    margin: auto;
-    margin-top: 20px; }
+    padding: 50px;
+    margin: 20px auto 50px auto; }
+    @media screen and (max-width: 1100px) {
+      div.contact .contact-wrap {
+        width: 80%;
+        padding: 20px;
+        margin: auto; } }
     div.contact .contact-wrap p {
       text-indent: 40px;
       text-shadow: 1px 1px 1px #000;
       color: #fff;
       font-size: 22px; }
+      @media screen and (max-width: 600px) {
+        div.contact .contact-wrap p {
+          font-size: 18px; } }
   div.contact .exit-controls {
     position: absolute;
     top: 0;
@@ -608,6 +674,16 @@ div.about {
   width: 800px;
   background: rgba(0, 0, 0, 0.8);
   border-radius: 5px; }
+  @media screen and (max-width: 1100px) {
+    div.about {
+      margin-top: 150px;
+      padding: 20px 0 50px 0; } }
+  @media screen and (max-width: 900px) {
+    div.about {
+      width: 100%; } }
+  @media screen and (max-width: 500px) {
+    div.about {
+      margin: 120px auto 0 auto; } }
   div.about h2 {
     color: #fff;
     font-size: 45px;
@@ -621,13 +697,20 @@ div.about {
     border-radius: 5px;
     width: 600px;
     padding: 50px 50px;
-    margin: auto;
-    margin-top: 20px; }
+    margin: 20px auto 50px auto; }
+    @media screen and (max-width: 1100px) {
+      div.about .about-wrap {
+        width: 80%;
+        padding: 20px;
+        margin: auto; } }
     div.about .about-wrap p {
       text-indent: 40px;
       text-shadow: 1px 1px 1px #000;
       color: #fff;
       font-size: 22px; }
+      @media screen and (max-width: 600px) {
+        div.about .about-wrap p {
+          font-size: 18px; } }
   div.about .exit-controls {
     position: absolute;
     top: 0;
