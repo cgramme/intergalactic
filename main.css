@@ -1,0 +1,648 @@
+html, body, h1, h2, h3, h4, h5, p, li, ul, ol, input, select, div, button {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  border: 0; }
+
+html {
+  height: 100%;
+  width: 100%;
+  font-family: "Open Sans",Sans-serif,Helvetica,Arial,sans-serif; }
+
+body {
+  background: url(images/space.jpg) fixed;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; }
+
+@keyframes flightSetupOut {
+  from {
+    height: 150px; }
+  to {
+    height: 0px; } }
+@-webkit-keyframes flightSetupOut {
+  from {
+    height: 150px; }
+  to {
+    height: 0px; } }
+.flight-setup-out {
+  animation: flightSetupOut 1s forwards;
+  -webkit-animation: flightSetupOut 1s forwards; }
+
+@keyframes flightSetupIn {
+  from {
+    height: 0px; }
+  to {
+    height: 150px; } }
+@-webkit-keyframes flightSetupIn {
+  from {
+    height: 0px; }
+  to {
+    height: 150px; } }
+.flight-setup-in {
+  animation: flightSetupIn 1s forwards;
+  -webkit-animation: flightSetupIn 1s forwards; }
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.fade-in {
+  -webkit-animation: fadeIn 1s forwards;
+  animation: fadeIn 1s forwards; }
+
+.page-wrap {
+  width: 100%;
+  height: 100%; }
+
+#space-craft-anima {
+  width: 50px;
+  height: 25px;
+  position: fixed;
+  top: 100px;
+  left: -150px;
+  background: url(images/spacecraft.png);
+  background-size: 100% 100%;
+  z-index: -10; }
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  border-top: 15px solid #111;
+  overflow: hidden;
+  z-index: 2;
+  box-shadow: inset 0 0 10px 0 #000, 0 0 10px 0 #000; }
+  @media screen and (max-width: 1100px) {
+    .header {
+      height: 120px;
+      background: #777; } }
+  @media screen and (max-width: 550px) {
+    .header {
+      border: none; } }
+  @media screen and (max-width: 500px) {
+    .header {
+      height: 110px; } }
+  @media screen and (max-width: 400px) {
+    .header {
+      height: 95px; } }
+  .header .logo-wrap {
+    transform: skewX(-45deg);
+    -webkit-transform: skewX(-45deg);
+    margin-left: -40px;
+    margin-top: -5px;
+    width: 580px;
+    height: 65px;
+    background: #111;
+    box-shadow: 5px 5px 5px 0px #000; }
+    @media screen and (max-width: 550px) {
+      .header .logo-wrap {
+        width: 100%;
+        margin: 0;
+        transform: skewX(0deg);
+        -webkit-transform: skewX(0deg); } }
+    @media screen and (max-width: 400px) {
+      .header .logo-wrap {
+        height: 50px; } }
+    .header .logo-wrap .logo {
+      position: relative;
+      top: -5px;
+      left: 40px;
+      transform: skewX(45deg);
+      -webkit-transform: skewX(45deg);
+      background: url(images/intergalacticLogo.png);
+      background-size: 100% 100%;
+      height: 70px;
+      width: 500px; }
+      @media screen and (max-width: 550px) {
+        .header .logo-wrap .logo {
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          transform: skewX(0deg);
+          -webkit-transform: skewX(0deg); } }
+  .header ul.main-menu {
+    position: absolute;
+    top: 0px;
+    left: 510px;
+    background: #777;
+    width: 100%;
+    height: 60px;
+    display: block;
+    z-index: -10;
+    box-shadow: inset 0 0 10px 2px #000; }
+    @media screen and (max-width: 1100px) {
+      .header ul.main-menu {
+        top: 60px;
+        left: 0;
+        background: none;
+        box-shadow: none;
+        margin: auto;
+        text-align: center; } }
+    @media screen and (max-width: 400px) {
+      .header ul.main-menu {
+        top: 45px; } }
+    .header ul.main-menu li {
+      padding: 10px;
+      font-size: 28px;
+      color: #222;
+      text-shadow: 1px 1px 1px #aaa;
+      display: inline-block;
+      margin: 5px 0 0 20px; }
+      @media screen and (max-width: 1250px) {
+        .header ul.main-menu li {
+          font-size: 20px;
+          margin: 10px 0 0 20px; } }
+      @media screen and (max-width: 1100px) {
+        .header ul.main-menu li {
+          font-size: 28px;
+          margin: 5px 0 0 0; } }
+      @media screen and (max-width: 650px) {
+        .header ul.main-menu li {
+          font-size: 20px;
+          margin-top: 10px; } }
+      @media screen and (max-width: 500px) {
+        .header ul.main-menu li {
+          font-size: 16px;
+          padding: 10px 10px; } }
+      @media screen and (max-width: 390px) {
+        .header ul.main-menu li {
+          padding: 10px 5px; } }
+      @media screen and (max-width: 350px) {
+        .header ul.main-menu li {
+          font-size: 14px; } }
+      .header ul.main-menu li:first-child {
+        text-indent: 50px;
+        margin-left: 10px; }
+        @media screen and (max-width: 1100px) {
+          .header ul.main-menu li:first-child {
+            text-indent: 0;
+            margin-left: 0; } }
+      .header ul.main-menu li:hover {
+        color: #fff;
+        cursor: pointer; }
+
+.launch-controls {
+  z-index: 1;
+  position: relative;
+  display: none;
+  opacity: 0;
+  margin: 100px auto;
+  width: 800px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 30px 20px 50px 20px;
+  border-radius: 5px; }
+  .launch-controls h2 {
+    color: #fff;
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 40px;
+    text-shadow: 1px 1px 2px #000;
+    font-family: 'Open Sans Condensed', sans-serif; }
+  .launch-controls .controls-wrap {
+    margin: 0px auto;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    width: 500px;
+    padding: 20px;
+    box-shadow: inset 0 0 5px 2px #555, 0 0 10px 5px #000; }
+    .launch-controls .controls-wrap ul.controls {
+      margin: auto;
+      text-align: center; }
+      .launch-controls .controls-wrap ul.controls li {
+        padding: 10px;
+        display: inline-block;
+        margin: 10px;
+        width: 180px;
+        height: 80px;
+        background: rgba(0, 0, 0, 0.8);
+        border-radius: 5px;
+        box-shadow: 1px 1px 1px 1px #000, inset 1px 1px 1px 0 #aaa;
+        border: 1px solid #222;
+        vertical-align: top; }
+        .launch-controls .controls-wrap ul.controls li:last-child {
+          padding: 5px;
+          background: transparent;
+          box-shadow: none;
+          border: 1px solid transparent;
+          width: 100px; }
+        .launch-controls .controls-wrap ul.controls li h3 {
+          font-size: 18px;
+          color: #ddd;
+          text-shadow: 1px 1px 1px #000; }
+        .launch-controls .controls-wrap ul.controls li select, .launch-controls .controls-wrap ul.controls li input {
+          margin-top: 5px;
+          box-shadow: 1px 1px 1px 0 #999;
+          border: 1px solid #222;
+          background: #000;
+          font-size: 16px;
+          width: 180px;
+          border-radius: 5px;
+          padding: 2px;
+          color: #ccc;
+          text-shadow: 1px 1px 1px #000; }
+          .launch-controls .controls-wrap ul.controls li select:hover, .launch-controls .controls-wrap ul.controls li input:hover {
+            cursor: pointer; }
+        .launch-controls .controls-wrap ul.controls li .status {
+          height: 5px;
+          border-radius: 5px;
+          box-shadow: 0 0 5px 0 #fff;
+          width: 170px;
+          background: #f00;
+          margin: 17px auto; }
+        .launch-controls .controls-wrap ul.controls li #date-selected + .status {
+          background: #0f0; }
+        .launch-controls .controls-wrap ul.controls li .launch-button {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          background: #f00;
+          margin: auto;
+          border-top: 4px solid #777;
+          border-left: 4px solid #777;
+          border-right: 4px solid #555;
+          border-bottom: 4px solid #555;
+          box-shadow: 1px 1px 5px 1px #000, inset 1px 1px 1px 0px #fff, inset -1px -1px 1px 0 #333; }
+          .launch-controls .controls-wrap ul.controls li .launch-button:hover {
+            cursor: pointer;
+            box-shadow: 1px 1px 5px 1px #000, inset 1px 1px 5px 2px #000, inset -1px -1px 1px 1px #fff; }
+          .launch-controls .controls-wrap ul.controls li .launch-button p {
+            color: #fff;
+            font-size: 16px;
+            padding-top: 31px;
+            font-weight: bold; }
+  .launch-controls .exit-controls {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    background: url(images/x_icon.png);
+    background-size: 100% 100%; }
+    .launch-controls .exit-controls:hover {
+      cursor: pointer; }
+
+.main-content {
+  opacity: 0;
+  display: none;
+  width: 90%;
+  margin: 100px auto;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  padding: 20px; }
+  @media screen and (max-width: 1100px) {
+    .main-content {
+      margin-top: 150px;
+      padding: 10px 0; } }
+  @media screen and (max-width: 900px) {
+    .main-content {
+      width: 100%; } }
+  @media screen and (max-width: 500px) {
+    .main-content {
+      margin: 110px auto 0 auto; } }
+  .main-content h2.motto {
+    font-size: 45px;
+    color: #fff;
+    text-align: center;
+    padding: 20px 5px 80px 5px;
+    text-shadow: 1px 1px 3px #000;
+    font-family: 'Open Sans Condensed', sans-serif; }
+    @media screen and (max-width: 600px) {
+      .main-content h2.motto {
+        font-size: 30px;
+        padding: 20px 5px; } }
+  .main-content h5.disclaimer {
+    font-size: 12px;
+    color: #bbb;
+    text-align: center;
+    width: 98%;
+    margin: 50px auto 0 auto; }
+    @media screen and (max-width: 600px) {
+      .main-content h5.disclaimer {
+        margin-top: 20px; } }
+  .main-content .destinations {
+    padding: 20px;
+    border-radius: 5px;
+    width: 900px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.2);
+    margin-bottom: 50px;
+    box-shadow: inset 0 0 5px 2px #555, 0 0 10px 5px #000; }
+    @media screen and (max-width: 1100px) {
+      .main-content .destinations {
+        width: 90%;
+        padding: 10px; } }
+    @media screen and (max-width: 600px) {
+      .main-content .destinations {
+        width: 92%;
+        padding: 5px; } }
+    .main-content .destinations .shade {
+      padding: 20px;
+      margin: 20px;
+      background: rgba(0, 0, 0, 0.8);
+      border-radius: 5px;
+      box-shadow: inset 1px 1px 1px 1px #000, 1px 1px 1px 0 #aaa; }
+      @media screen and (max-width: 550px) {
+        .main-content .destinations .shade {
+          margin: 5px; } }
+      .main-content .destinations .shade .destination-planet {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        float: right;
+        position: relative;
+        top: -0px;
+        box-shadow: 0 0 10px 0 #000; }
+        @media screen and (max-width: 550px) {
+          .main-content .destinations .shade .destination-planet {
+            width: 50px;
+            height: 50px; } }
+      .main-content .destinations .shade img {
+        position: relative;
+        height: 20px;
+        width: 20px;
+        top: 17px;
+        left: 6px;
+        z-index: 1; }
+      .main-content .destinations .shade i {
+        color: #fff; }
+    .main-content .destinations h1 {
+      text-align: center;
+      color: #000;
+      text-shadow: 1px 1px 1px #999;
+      font-size: 35px;
+      margin-bottom: 50px; }
+      @media screen and (max-width: 600px) {
+        .main-content .destinations h1 {
+          font-size: 25px;
+          padding-top: 10px; } }
+    .main-content .destinations h2 {
+      color: #6F98A5;
+      font-size: 28px;
+      text-shadow: 1px 1px 3px #000; }
+      @media screen and (max-width: 600px) {
+        .main-content .destinations h2 {
+          font-size: 22px; } }
+    .main-content .destinations h3 {
+      margin-left: -20px;
+      margin-bottom: 10px;
+      color: #6F98A5;
+      font-size: 20px; }
+      @media screen and (max-width: 370px) {
+        .main-content .destinations h3 {
+          font-size: 14px; } }
+    .main-content .destinations h4 {
+      color: #fff;
+      font-size: 18px; }
+      @media screen and (max-width: 370px) {
+        .main-content .destinations h4 {
+          font-size: 14px; } }
+  .main-content .testimony {
+    padding: 20px;
+    border-radius: 5px;
+    width: 900px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 0 5px 2px #555, 0 0 10px 5px #000; }
+    @media screen and (max-width: 1100px) {
+      .main-content .testimony {
+        width: 90%;
+        padding: 10px; } }
+    @media screen and (max-width: 600px) {
+      .main-content .testimony {
+        width: 92%;
+        padding: 5px; } }
+    .main-content .testimony h2 {
+      font-size: 30px;
+      color: #6F98A5;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 1px #222; }
+      @media screen and (max-width: 600px) {
+        .main-content .testimony h2 {
+          font-size: 22px; } }
+    .main-content .testimony .a-testimony {
+      clear: both;
+      margin: 20px 10px;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.8);
+      border-radius: 5px;
+      box-shadow: inset 1px 1px 1px 1px #000, 1px 1px 1px 0 #aaa; }
+      @media screen and (max-width: 550px) {
+        .main-content .testimony .a-testimony {
+          margin: 5px; } }
+      .main-content .testimony .a-testimony h3 {
+        font-size: 25px;
+        color: #6F98A5;
+        margin-bottom: 20px; }
+        @media screen and (max-width: 450px) {
+          .main-content .testimony .a-testimony h3 {
+            clear: both; } }
+      .main-content .testimony .a-testimony h4 {
+        font-size: 18px;
+        color: #fff; }
+      .main-content .testimony .a-testimony h5 {
+        font-size: 14px;
+        color: #fff;
+        margin-bottom: 10px; }
+      .main-content .testimony .a-testimony img {
+        border-radius: 50%;
+        height: 170px;
+        width: 170px;
+        background-size: 100% 100%;
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 10px; }
+        @media screen and (max-width: 450px) {
+          .main-content .testimony .a-testimony img {
+            position: relative;
+            left: 50%;
+            float: none;
+            margin-left: -85px; } }
+
+.submit-page {
+  display: none;
+  opacity: 0;
+  padding: 20px;
+  text-align: center;
+  margin: 100px auto;
+  width: 800px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 5px; }
+  .submit-page .flight-details-wrap {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 0 5px 2px #555, 0 0 10px 5px #000;
+    border-radius: 5px;
+    width: 600px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px; }
+    .submit-page .flight-details-wrap .shade-area {
+      font-family: 'Open Sans Condensed', sans-serif;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.8);
+      border-radius: 5px;
+      box-shadow: inset 1px 1px 1px 1px #000, 1px 1px 1px 0 #aaa; }
+      .submit-page .flight-details-wrap .shade-area .countdown {
+        color: #fff;
+        text-shadow: 1px 1px 1px #000;
+        font-size: 35px; }
+      .submit-page .flight-details-wrap .shade-area button {
+        border-radius: 5px;
+        background: #555;
+        color: #ddd;
+        font-size: 22px;
+        margin-top: 10px;
+        padding: 10px 10px;
+        text-shadow: 1px 1px 1px #000;
+        box-shadow: 1px 1px 5px 1px #000, inset -1px -1px 1px 1px #222, inset 1px 1px 1px 1px #999; }
+        .submit-page .flight-details-wrap .shade-area button:hover {
+          cursor: pointer;
+          background: #333;
+          box-shadow: inset 1px 1px 3px 1px #000, inset -1px -1px 1px 1px #777; }
+      .submit-page .flight-details-wrap .shade-area #counter {
+        font-size: 26px;
+        font-weight: bold;
+        text-align: center;
+        color: #fff;
+        margin: 0 5px 5px 5px;
+        text-shadow: 0 0 10px #000;
+        padding: 5px; }
+  .submit-page h2 {
+    text-align: center;
+    font-size: 35px;
+    color: #fff;
+    padding-bottom: 20px;
+    font-family: 'Open Sans Condensed', sans-serif; }
+  .submit-page h2 + h3 {
+    font-size: 40px;
+    font-family: 'Open Sans Condensed', sans-serif; }
+  .submit-page h3 {
+    font-size: 20px;
+    color: #fff; }
+  .submit-page h4 {
+    font-size: 25px;
+    color: #000;
+    text-shadow: 1px 1px 1px #777;
+    padding-bottom: 10px; }
+  .submit-page img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 5px solid #000;
+    box-shadow: 0 0 1px 1px #777, 1px 1px 3px 0 #999;
+    margin: 10px; }
+  .submit-page .left-side {
+    margin-top: 20px;
+    height: 350px;
+    text-align: center;
+    float: left;
+    width: 50%; }
+    .submit-page .left-side .people {
+      font-size: 40px;
+      color: #fff; }
+  .submit-page .right-side {
+    margin-top: 20px;
+    height: 350px;
+    text-align: center;
+    float: right;
+    width: 50%; }
+
+div.contact {
+  position: relative;
+  display: none;
+  opacity: 0;
+  padding: 20px;
+  text-align: center;
+  margin: 100px auto;
+  width: 800px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 5px; }
+  div.contact h2 {
+    color: #fff;
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 40px;
+    text-shadow: 1px 1px 2px #000;
+    font-family: 'Open Sans Condensed', sans-serif; }
+  div.contact .contact-wrap {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 0 5px 2px #555, 0 0 10px 5px #000;
+    border-radius: 5px;
+    width: 600px;
+    padding: 50px 50px;
+    margin: auto;
+    margin-top: 20px; }
+    div.contact .contact-wrap p {
+      text-indent: 40px;
+      text-shadow: 1px 1px 1px #000;
+      color: #fff;
+      font-size: 22px; }
+  div.contact .exit-controls {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    background: url(images/x_icon.png);
+    background-size: 100% 100%; }
+    div.contact .exit-controls:hover {
+      cursor: pointer; }
+
+div.about {
+  position: relative;
+  display: none;
+  opacity: 0;
+  padding: 20px;
+  text-align: center;
+  margin: 100px auto;
+  width: 800px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 5px; }
+  div.about h2 {
+    color: #fff;
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 40px;
+    text-shadow: 1px 1px 2px #000;
+    font-family: 'Open Sans Condensed', sans-serif; }
+  div.about .about-wrap {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 0 5px 2px #555, 0 0 10px 5px #000;
+    border-radius: 5px;
+    width: 600px;
+    padding: 50px 50px;
+    margin: auto;
+    margin-top: 20px; }
+    div.about .about-wrap p {
+      text-indent: 40px;
+      text-shadow: 1px 1px 1px #000;
+      color: #fff;
+      font-size: 22px; }
+  div.about .exit-controls {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    background: url(images/x_icon.png);
+    background-size: 100% 100%; }
+    div.about .exit-controls:hover {
+      cursor: pointer; }
+
+div.ui-datepicker {
+  font-size: 20px; }
+
+.clear {
+  clear: both; }
+
+/*# sourceMappingURL=main.css.map */

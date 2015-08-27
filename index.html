@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel='stylesheet' href='main.css' media="screen"n/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:500|Open+Sans+Condensed:300|Abel'rel='stylesheet' type='text/css' />
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=0" />
+		<link rel='stylesheet' href='jquery.datepicker/jquery-ui.css' type='text/css' />
+	</head>
+	<body>
+		<div class="page-wrap">
+			<div class="header">
+				<div class="logo-wrap">
+					<div class="logo"></div>
+				</div>
+				<ul class="main-menu">
+					<li class="menu-launch-setup">Launch Setup</li>
+					<li class="menu-testimonies">Testimonies</li>
+					<li class="menu-contact">Contact</li>
+					<li class="menu-about">About</li>
+				</ul>
+			</div>
+			<div class="launch-controls">
+				<h2>Launch Controls</h2>
+				<div class="exit-controls"></div>
+				<div class="controls-wrap">
+					<ul class="controls">
+						<li>
+							<h3>Destination</h3>
+							<select class='destination'>
+			                	<option value='0'>Select destination...</option> 
+								<option>Moon</option>
+								<option>Mars</option>
+								<option>Titan</option>
+								<option>Alpha Centauri</option>
+							</select>
+							<div class="status"></div>
+						</li>
+						<li>
+							<h3>Vehicle</h3>
+							<select class='vehicle'>
+			                	<option value='0'>Select vehicle...</option> 
+								<option>Hydrogen Capsule</option>
+								<option>Nuclear Rocket</option>
+								<option>Starship Enterprise</option>
+								<option>Homemade Spaceship</option>
+								<option>Millennium Falcon</option>
+								<option>Death Star</option>
+							</select>
+							<div class="status"></div>
+						</li><br>
+						<li>
+							<h3># of People</h3>
+							<select class='passengers'>
+			                	<option value='0'>Select passengers...</option> 
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+							</select>
+							<div class="status"></div>
+						</li>
+						<li>
+							<h3>Date</h3>
+							<input id='date-selected' class='date'>
+							<div class="status"></div>
+						</li><br>
+						<li>
+							<div class="launch-button"><p>Launch</p></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="main-content">
+				<h2 class="motto">Earthlings, get ready for the ultimate intergalactic adventure!</h2>
+				<div class='destinations'>
+					<h1>Book your vacation today!</h1>
+					<h2>Destinations:</h2>	
+					<div class='shade'>
+						<img class="destination-planet" src="images/moon.jpg" alt="moon picture" />
+						<h3><img src='images/flame.png' alt='flame'><i class='fa fa-rocket'></i> Moon:</h3>
+						<h4>Most popular human destination. Makes a great weekend getaway!</h4>
+					</div>
+					<div class='shade'>
+						<img class="destination-planet" src="images/mars.jpg" alt="mars picture" />
+						<h3><img src='images/flame.png' alt='flame'><i class='fa fa-rocket'></i> Mars:</h3>
+						<h4>Home of the best permafrost slushies in the solar system!</h4>
+					</div>
+					<div class='shade'>
+						<img class="destination-planet" src="images/triton.jpg" alt="titan picture" />
+						<h3><img src='images/flame.png' alt='flame'><i class='fa fa-rocket'></i> Titan:</h3>
+						<h4>Take a dip in an invigorating methane lake. Worth the travel time!</h4>
+					</div>
+					<div class='shade'>
+						<img class="destination-planet" src="images/alphaCentauri.jpg" alt="alph centari picture" />
+						<h3><img src='images/flame.png' alt='flame'><i class='fa fa-rocket'></i> Alpha Centauri:</h3>
+						<h4>Be a pioneer of the galaxy... and don't forget to pack a lunch!</h4>
+					</div>
+				</div>
+				<div class='testimony'>
+					<h2>Testimonies:</h2>
+					<div class='a-testimony'>
+						<img src='images/sunburn.jpg' alt='sunburn'>
+						<h3>Rad Chad aka "Radiation" Chad</h3>
+						<h4>I had the greatest time in outer space! My friends and I have been talking about this vacation for the longest time and it finally happened! Besides the bumpy ride, solar flares, gamma rays, radiation and 30G acceleration it was the perfect 25 year get away!</h4>
+						<div class='clear'></div>
+					</div>
+					<div class='a-testimony'>
+						<img src='images/old_man.jpg' alt='doc'>
+						<h3>Doc</h3>
+						<h4>My homemade spaceship worked like a charm! The only thing more invigorating than Titans methane lakes is the feeling of 1.21 gigawatts interfused with my homemade space craft! Thank the extraterrestrials for Titans high speed internet access!</h4>
+						<div class='clear'></div>
+					</div>
+					<div class='a-testimony'>
+						<img src='images/cast.jpg' alt='cast'>
+						<h3>Tom Cruise</h3>
+						<h5>"Edited by moderator"</h5>
+						<h4>Everything went perfectly... I don't know what my favorite part was, maybe all the wonderful views or the free snack bar. Finally, I got to meet the extraterrestrials!</h4>
+						<div class='clear'></div>
+					</div>
+					<div class='clear'></div>
+				</div>
+				<h5 class="disclaimer">Disclaimer: We take no responsibility for any harm you may be subject to during your travels. This includes but is not limited to... Freezing, burning, loss of oxygen, disease, sickness, starving, radiation, suction into black hole, explosion etc... We stand proudly by our 0.06% succes rate!</h5>
+			</div>
+			<div id='submit-page' class='submit-page'>
+				<h2>Thank you for choosing Intergalactic Adventures!</h3>
+				<h3 class='details-below'>Flight details</h3>
+				<div class="flight-details-wrap">
+					<div class='left-side'>
+						<h4 class='final-vehicle'>Vehicle:</h4>
+						<img class='vehicleImg' src='images/rocket.jpg' alt='vehicle'>
+						<h4 class='final-passengers'>Passengers:</h4>
+						<div class='people'></div>
+					</div>
+					<div class='right-side'>
+						<h4 class='final-destination'>Destination:</h4>
+						<img class='planet' src='images/moon.jpg' alt='destination'>
+						<h4>Launch date:</h4>
+						<h3 class='final-date'></h3>
+					</div>
+					<div class="shade-area clear">
+						<h4 class='countdown clear'>Countdown:</h4>
+						<div id='counter'></div>
+						<button class='continue'>Continue</button>
+					</div>
+				</div>
+				<div class='clear'></div>
+			</div>
+			<div class="contact">
+				<div class="exit-controls"></div>
+				<h2>Contact</h2>
+				<div class="contact-wrap">
+					<p>If you would like to contact us please book a flight to Alpha Centauri and ask to speak with Trorgroban on arrival. It will be very happy to answer any questions you may have. Important: DO NOT forget to bring a snack!</p>
+				</div>
+			</div>
+			<div class="about">
+				<div class="exit-controls"></div>
+				<h2>About</h2>
+				<div class="about-wrap">
+					<p>Here at Intergalactic Adventures we strive to bring you the excitment you lack as human beings. We have launched over 100,000 vacations with approximately 24 successful returns. You will be safely bolted, strapped, and locked into the space vehicle of your choice shortly followed by a sizeable explosion launching you into oblivion. Free unlimited snackbar while supplies last!</p>
+				</div>
+			</div>
+		</div>
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js" type='text/javascript'></script>
+		<script type='text/javascript' src="jquery.countdown.js"></script>
+		<script type='text/javascript' src='script.js'></script>
+		<script src="jquery.datepicker/jquery-ui.js"></script>
+	</body>
+</html>
