@@ -10,7 +10,7 @@ $(window).load(function(){
 });
 //After DOM loads completely do below.
 $(document).ready(function(){
-	//When 'Intergalactic Adventures' logo is clicked fade in main content
+	//When 'Intergalactic Adventures' logo is clicked fade in main content.
 	$('.logo').on('click', function(){
 		$('.launch-controls, .submit-page, div.contact, div.about').hide().css({'opacity':'0'});
 		$('.main-content').show().addClass('fade-in');
@@ -18,7 +18,7 @@ $(document).ready(function(){
 	});
 	//Set launch control default date to current date.
 	$("#date-selected").datepicker().datepicker("setDate", new Date());
-	//set the originalDate the same as launch control date for later comparison.
+	//set the varible 'originalDate' the same as launch control date for later date selected comparison.
 	originalDate = $('#date-selected').val();
 	//Main menu options clicked below.
 	//Open and close the launch controls.
@@ -91,17 +91,17 @@ function startFlight (){
 	$('.launch-controls').removeClass('flight-setup-in').addClass('flight-setup-out');
 	$('.main-content').hide();
 	$('.submit-page').show().addClass('fade-in');
-	//Set varibles as the parameters choosen from launch setup.
+	//Set varibles as the parameters chosen from launch setup.
 	var myDestination = $('.destination').val();
 	var myPassNumber = +$('.passengers').val();
 	var myVehicle = $('.vehicle').val();
 	var myDate = $('.date').val();
-	//Set image of destination choosen from launch setup.
+	//Set image of destination chosen from launch setup.
 	if(myDestination=='Alpha Centauri'){$(".planet").attr('src','images/alphaCentauri.jpg');
 	}else if(myDestination=='Titan'){$(".planet").attr('src','images/triton.jpg');
 	}else if(myDestination=='Mars'){$(".planet").attr('src','images/mars.jpg');
 	}else{$(".planet").attr('src','images/moon.jpg');}
-	//Set image of space vehicle chossen from launch setup.
+	//Set image of space vehicle chosen from launch setup.
 	if(myVehicle=='Hydrogen Capsule'){$(".vehicleImg").attr('src','images/capsule.jpg');
 	}else if(myVehicle=='Nuclear Rocket'){$(".vehicleImg").attr('src','images/rocket.jpg');
 	}else if(myVehicle=='Starship Enterprise'){$(".vehicleImg").attr('src','images/enterprise.jpg');
@@ -115,7 +115,7 @@ function startFlight (){
 	}
 	//Sets the selected date from launch setup and checks if it is the current date or a future date.
 	//If the date is set to current date it will display "Your flight leaves today!".
-	//If date is set to a future date it will display a countdown to launch date.
+	//If date is set to a future date it will display a countdown until launch date.
 	$('.final-date').html(myDate);
 	if($('.date').val() == originalDate){
 		$('#counter').html("Your flight leaves today!");
@@ -125,7 +125,7 @@ function startFlight (){
     	});
 	}
 }
-//Add element to DOM and and animate it from left to right with randomly generated setings.
+//Add element to DOM and animate it from left to right with randomly generated setings depending upon space craft size.
 function animateSpaceCraft(minHeight) {
 	var size = Math.floor(Math.random()*(100-20+1)+20);
 	var speed = (500000/size);
